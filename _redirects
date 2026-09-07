@@ -1,0 +1,29 @@
+# legacy Shopify duplicate pages -> canonical article
+/pages/20-minute-home-workout-busy-adults-over-30  /blogs/movement-home-workouts/20-minute-home-workout-busy-adults-over-30/  301
+/pages/20-minute-home-workout-busy-adults-over-30/  /blogs/movement-home-workouts/20-minute-home-workout-busy-adults-over-30/  301
+/pages/always-tired-even-after-sleep-busy-adults  /blogs/sleep-recovery/always-tired-even-after-sleep-busy-adults/  301
+/pages/always-tired-even-after-sleep-busy-adults/  /blogs/sleep-recovery/always-tired-even-after-sleep-busy-adults/  301
+/pages/easy-healthy-meals-under-15-minutes-after-work  /blogs/healthy-eating/easy-healthy-meals-under-15-minutes-after-work/  301
+/pages/easy-healthy-meals-under-15-minutes-after-work/  /blogs/healthy-eating/easy-healthy-meals-under-15-minutes-after-work/  301
+/pages/eat-healthy-every-day-busy-adults-no-time-to-cook  /blogs/healthy-eating/eat-healthy-every-day-busy-adults-no-time-to-cook/  301
+/pages/eat-healthy-every-day-busy-adults-no-time-to-cook/  /blogs/healthy-eating/eat-healthy-every-day-busy-adults-no-time-to-cook/  301
+/pages/essential-supplements-busy-adults-over-30-daily-health  /blogs/smart-supplements/essential-supplements-busy-adults-over-30-daily-health/  301
+/pages/essential-supplements-busy-adults-over-30-daily-health/  /blogs/smart-supplements/essential-supplements-busy-adults-over-30-daily-health/  301
+/pages/healthy-habits-for-busy-adults-30  /  301
+/pages/healthy-habits-for-busy-adults-30/  /  301
+/pages/how-to-build-healthy-daily-habits-busy-adults-over-30-no-time  /blogs/daily-habit-systems/how-to-build-healthy-habits-no-time/  301
+/pages/how-to-build-healthy-daily-habits-busy-adults-over-30-no-time/  /blogs/daily-habit-systems/how-to-build-healthy-habits-no-time/  301
+/pages/improve-sleep-quality-busy-stressful-schedule  /blogs/sleep-recovery/how-to-improve-sleep-quality-busy-adults/  301
+/pages/improve-sleep-quality-busy-stressful-schedule/  /blogs/sleep-recovery/how-to-improve-sleep-quality-busy-adults/  301
+/pages/low-energy-even-with-healthy-lifestyle-supplements-over-30  /blogs/smart-supplements/low-energy-even-with-healthy-lifestyle-supplements-over-30/  301
+/pages/low-energy-even-with-healthy-lifestyle-supplements-over-30/  /blogs/smart-supplements/low-energy-even-with-healthy-lifestyle-supplements-over-30/  301
+/pages/quick-home-fitness-plan-working-adults-no-time-workout-over-30  /blogs/movement-home-workouts/quick-home-fitness-plan-working-adults-no-time-workout-over-30/  301
+/pages/quick-home-fitness-plan-working-adults-no-time-workout-over-30/  /blogs/movement-home-workouts/quick-home-fitness-plan-working-adults-no-time-workout-over-30/  301
+/pages/simple-daily-routine-healthy-habits-busy-adults-over-30  /blogs/daily-habit-systems/simple-daily-routine-healthy-habits-busy-adults-over-30/  301
+/pages/simple-daily-routine-healthy-habits-busy-adults-over-30/  /blogs/daily-habit-systems/simple-daily-routine-healthy-habits-busy-adults-over-30/  301
+
+# old shopify system paths
+/collections/*  /  301
+/products/*  /  301
+/cart  /  301
+/search  /  301
