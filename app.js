@@ -44,3 +44,15 @@ function wire(form){
 }
 forms.forEach(wire);
 })();
+
+/* Google Analytics 4 */
+(function(){
+var ID='G-DYB1FWD4X0';
+var s=document.createElement('script'); s.async=true;
+s.src='https://www.googletagmanager.com/gtag/js?id='+ID;
+document.head.appendChild(s);
+window.dataLayer=window.dataLayer||[];
+window.gtag=function(){dataLayer.push(arguments)};
+gtag('js',new Date());
+gtag('config',ID);
+})();
