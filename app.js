@@ -34,7 +34,7 @@ function wire(form){
    if(r.status===202||r.ok){
     form.hidden=true;
     var s=form.parentNode.querySelector('small'); if(s) s.hidden=true;
-    say('You\u2019re in. Check your inbox \u2014 the 30-day challenge is on its way.',true);
+    say('Almost there \u2014 check your inbox and click the confirmation link. The challenge lands right after.',true);
    } else { throw new Error(r.status); }
   }).catch(function(){
    btn.disabled=false; btn.textContent=label;
