@@ -59,12 +59,13 @@ gtag('config',ID);
 
 /* footer: privacy link (injected so it lands on every page without rebuilding all of them) */
 (function(){
-var nav=document.querySelector('footer.site nav');
-if(!nav||/pages\/privacy/.test(nav.innerHTML)) return;
-var faq=Array.prototype.slice.call(nav.querySelectorAll('a')).filter(function(x){return /faq/i.test(x.getAttribute('href')||'')})[0];
+var f=document.querySelector('footer.site'); if(!f) return;
+if(/pages\/privacy/.test(f.innerHTML)) return;
+var faq=Array.prototype.slice.call(f.querySelectorAll('nav a')).filter(function(x){
+  return /pages\/faq\/?$/.test(x.getAttribute('href')||'');})[0];
 if(!faq) return;
 var a=document.createElement('a');
-a.href=faq.getAttribute('href').replace(/faq\/$/,'privacy/');
+a.href=faq.getAttribute('href').replace(/faq\/?$/,'privacy/');
 a.textContent='Privacy';
 faq.parentNode.insertBefore(a,faq.nextSibling);
 })();
