@@ -57,15 +57,24 @@ gtag('js',new Date());
 gtag('config',ID);
 })();
 
-/* footer: privacy link (injected so it lands on every page without rebuilding all of them) */
+/* footer: privacy + terms links (injected so they land on every page without rebuilding all of them) */
 (function(){
 var f=document.querySelector('footer.site'); if(!f) return;
-if(/pages\/privacy/.test(f.innerHTML)) return;
 var faq=Array.prototype.slice.call(f.querySelectorAll('nav a')).filter(function(x){
   return /pages\/faq\/?$/.test(x.getAttribute('href')||'');})[0];
 if(!faq) return;
-var a=document.createElement('a');
-a.href=faq.getAttribute('href').replace(/faq\/?$/,'privacy/');
-a.textContent='Privacy';
-faq.parentNode.insertBefore(a,faq.nextSibling);
+var base=faq.getAttribute('href');
+var prev=faq;
+[['privacy','Privacy'],['terms','Terms']].forEach(function(p){
+  if(new RegExp('pages/'+p[0]).test(f.innerHTML)) {
+    var ex=Array.prototype.slice.call(f.querySelectorAll('nav a')).filter(function(x){
+      return new RegExp('pages/'+p[0]+'/?$').test(x.getAttribute('href')||'');})[0];
+    if(ex){prev=ex; return;}
+  }
+  var a=document.createElement('a');
+  a.href=base.replace(/faq\/?$/,p[0]+'/');
+  a.textContent=p[1];
+  prev.parentNode.insertBefore(a,prev.nextSibling);
+  prev=a;
+});
 })();
